@@ -856,7 +856,7 @@ variable "IHSNode01_root_disk_size" {
 }
 
 module "provision_proxy_IHSNode01" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.IHSNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.IHSNode01.id}"
   ssh_user            = "${var.IHSNode01-os_admin_user}"
@@ -1217,7 +1217,7 @@ variable "WASDMGRNode01_root_disk_size" {
 }
 
 module "provision_proxy_WASDMGRNode01" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.WASDMGRNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.WASDMGRNode01.id}"
   ssh_user            = "${var.WASDMGRNode01-os_admin_user}"
@@ -1645,7 +1645,7 @@ variable "WASNode01_root_disk_size" {
 }
 
 module "provision_proxy_WASNode01" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.WASNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.WASNode01.id}"
   ssh_user            = "${var.WASNode01-os_admin_user}"
@@ -2076,7 +2076,7 @@ variable "WASNode02_root_disk_size" {
 }
 
 module "provision_proxy_WASNode02" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.WASNode02_ipv4_address}"
   id									= "${vsphere_virtual_machine.WASNode02.id}"
   ssh_user            = "${var.WASNode02-os_admin_user}"
